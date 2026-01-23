@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SnackMachine.API/SnackMachine.API.csproj" />
+    <Project Path="src/SnackMachine.Application/SnackMachine.Application.csproj" />
+    <Project Path="src/SnackMachine.Domain/SnackMachine.Domain.csproj" />
+    <Project Path="src/SnackMachine.Infrastructure/SnackMachine.Infrastructure.csproj" />
+  </Folder>
+</Solution>
