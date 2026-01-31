@@ -8,5 +8,15 @@
         public string? PasswordHash { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
+        private User() { }
+        public User(int id, string? username, string? email, string? passwordHash, DateTime createdAt, DateTime updatedAt)
+        {
+            Id = id;
+            Username = username;
+            Email = email;
+            PasswordHash = passwordHash;
+            CreatedAt = createdAt;
+            UpdatedAt = updatedAt;
+        }
     }
 }
