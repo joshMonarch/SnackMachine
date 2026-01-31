@@ -5,6 +5,7 @@ namespace SnackMachine.Domain.Entities
     public class Delivery
     {
         public int Id { get; private set; }
+        public int UserId { get; private set; }
         public int ProductId { get; private set; }
         public int Quantity { get; private set; }
         public Status Status { get; private set; }
