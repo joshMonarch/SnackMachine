@@ -8,6 +8,9 @@
         public string? PasswordHash { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
+        public IEnumerable<Sale>? SalesNavigation { get; private set; }
+        public IEnumerable<Delivery>? DeliveriesNavigation { get; private set; }
+
         private User() { }
         public User(string? username, string? email, string? passwordHash)
         {
