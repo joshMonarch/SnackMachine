@@ -9,14 +9,11 @@
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
         private Product() { }
-        public Product(int id, string? name, decimal price, int stock, DateTime createdAt, DateTime updatedAt)
+        public Product(string? name, decimal price, int stock)
         {
-            Id = id;
             Name = name;
             Price = price;
             Stock = stock;
-            CreatedAt = createdAt;
-            UpdatedAt = updatedAt;
         }
     
     }
