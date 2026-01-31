@@ -13,7 +13,7 @@ namespace SnackMachine.Domain.Entities
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
         public User? UserNavigation { get; private set; }
-        public IEnumerable<Product>? ProductsNavigation { get; private set; }
+        public Product? ProductNavigation { get; private set; }
         private Sale() { }
         public Sale(int userId, int productId, int quantity, Status status, decimal totalPrice)
         {
