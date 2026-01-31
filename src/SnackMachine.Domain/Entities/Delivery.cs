@@ -10,5 +10,15 @@ namespace SnackMachine.Domain.Entities
         public Status status { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
+        private Delivery() { }
+        public Delivery(int id, int productId, int quantity, Status status, DateTime createdAt, DateTime updatedAt)
+        {
+            Id = id;
+            ProductId = productId;
+            Quantity = quantity;
+            this.status = status;
+            CreatedAt = createdAt;
+            UpdatedAt = updatedAt;
+        }
     }
 }

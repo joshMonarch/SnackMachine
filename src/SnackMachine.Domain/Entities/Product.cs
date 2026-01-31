@@ -8,5 +8,16 @@
         public int Stock { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
+        private Product() { }
+        public Product(int id, string? name, decimal price, int stock, DateTime createdAt, DateTime updatedAt)
+        {
+            Id = id;
+            Name = name;
+            Price = price;
+            Stock = stock;
+            CreatedAt = createdAt;
+            UpdatedAt = updatedAt;
+        }
+    
     }
 }

@@ -12,5 +12,17 @@ namespace SnackMachine.Domain.Entities
         public decimal TotalPrice { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
+        private Sale() { }
+        public Sale(int id, int userId, int productId, int quantity, Status status, decimal totalPrice, DateTime createdAt, DateTime updatedAt)
+        {
+            Id = id;
+            UserId = userId;
+            ProductId = productId;
+            Quantity = quantity;
+            Status = status;
+            TotalPrice = totalPrice;
+            CreatedAt = createdAt;
+            UpdatedAt = updatedAt;
+        }
     }
 }
