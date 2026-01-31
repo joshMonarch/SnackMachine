@@ -10,6 +10,8 @@ namespace SnackMachine.Domain.Entities
         public Status Status { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
+        public User? UserNavigation { get; private set; }
+        public IEnumerable<Product>? ProductsNavigation { get; private set; }
         private Delivery() { }
         public Delivery(int productId, int quantity, Status status)
         {
